@@ -23,6 +23,6 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-![img1](/src/assets/screenshot-1)
-![img2](/src/assets/screenshot-2)
-![img3](/src/assets/screenshot-3)
+![img1](/src/assets/screenshot-1.png)
+![img2](/src/assets/screenshot-2.png)
+![img3](/src/assets/screenshot-3.png)
