@@ -3,6 +3,7 @@
     <v-system-bar
       dark
       color="primary"
+      fixed
     >
       <v-spacer></v-spacer>
       <v-icon>mdi-wifi-strength-4</v-icon>

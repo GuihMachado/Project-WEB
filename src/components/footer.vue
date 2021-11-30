@@ -7,7 +7,7 @@
       class="flex"
       flat
       tile
-      style="margin-bottom: 80px"
+      style="margin-bottom: 60px"
     >
       <v-card-title class="teal">
         <strong class="subheading">Get connected with us on social networks!</strong>

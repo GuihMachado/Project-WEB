@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
+    <!-- <v-app-bar
       app
       color="primary"
       dark
@@ -35,19 +35,26 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
-    </v-app-bar>
+    </v-app-bar> -->
+  <system-bar/>
+
+  <my-toolbar/>
 
     <v-main>
       <router-view/>
     </v-main>
+
+  <bottom-nav/>
   </v-app>
 </template>
 
 <script>
-
+import MyToolbar from './components/toolbar.vue'
+import SystemBar from './components/systemBar.vue' 
+import BottomNav from './components/bottom-nav.vue'
 export default {
   name: 'App',
-
+  components: {MyToolbar, SystemBar, BottomNav},
   data: () => ({
     //
   }),
