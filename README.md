@@ -29,7 +29,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ![img3](/src/assets/screenshot-3.png)
 
 ## AF2
-![img4](/src/assets/img 4.png)
-![img5](/src/assets/img 5.png)
-![img6](/src/assets/img 6.png)
-![img7](/src/assets/img 7.png)
+![img4](/src/assets/img4.png)
+![img5](/src/assets/img5.png)
+![img6](/src/assets/img6.png)
+![img7](/src/assets/img7.png)
