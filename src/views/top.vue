@@ -5,7 +5,7 @@
                 v-for="(data,i) in myCards"
                 :key="i"
                 cols="12"
-                sm="6"
+                sm="3"
             >
             <card-music :cardiD="i" :cardComplete="data" style="margin-top: 50px"/>
             </v-col>

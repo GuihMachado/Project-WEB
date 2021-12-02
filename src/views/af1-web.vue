@@ -8,7 +8,7 @@
           v-for="(data,i) in events"
           :key="i"
           cols="12"
-          sm="4"
+          sm="3"
         >
           <main-body :cardiD="i" :cardComplete="data" style="margin-bottom:15px"/>
         </v-col>
