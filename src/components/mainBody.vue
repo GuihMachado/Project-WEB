@@ -17,7 +17,7 @@
     </v-card-title>
 
     <v-card-text class="text-h5 font-weight-bold" style="color: black">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis vero, fugiat commodi, accusantium numquam, earum perferendis obcaecati distinctio suscipit hic? Illo rem aperiam odio sequi quam dolores nesciunt. Error.
+      {{cardComplete.description}}
     </v-card-text>
 
     <v-card-actions>
@@ -31,7 +31,7 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>Evan You</v-list-item-title>
+          <v-list-item-title>{{cardComplete.title}}</v-list-item-title>
         </v-list-item-content>
 
         <v-row
@@ -55,6 +55,7 @@
 
 <script>
   export default {
+    props: ['cardId', 'cardComplete'],
     data: () => ({
       //
     }),

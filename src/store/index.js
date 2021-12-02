@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -54,12 +55,31 @@ export default new Vuex.Store({
         rating: 4.3,
         year: 2017
       },
-    ]
+    ],
+    events: [],
+    title: 'iMusic'
   },
   mutations: {
+    SET_EVENTS(state, payload){
+      state.events = payload
+    }
   },
   actions: {
+    fecthEvents({commit}){
+      axios.get('https://agenda-balaguer.herokuapp.com/api/event')
+      .then(response =>{
+          const payload = response.data.values
+          commit('SET_EVENTS', payload)
+      }).catch(error =>{
+          console.log(error);
+      })
+    }
   },
   modules: {
+  },
+  getters: {
+    bigTitle(state){
+      return state.title
+    }
   }
 })

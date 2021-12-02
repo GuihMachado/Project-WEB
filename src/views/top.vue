@@ -1,12 +1,11 @@
 <template>
     <v-main>
-        <v-btn @click="fetch()">TEST</v-btn>
         <v-row>
             <v-col
                 v-for="(data,i) in myCards"
                 :key="i"
                 cols="12"
-                sm="4"
+                sm="6"
             >
             <card-music :cardiD="i" :cardComplete="data" style="margin-top: 50px"/>
             </v-col>
@@ -26,11 +25,6 @@
     computed: {
         myCards() {
             return store.state.cards
-        }
-    },
-    methods:{
-        fetch(){
-            console.log('teste');
         }
     }
   }
