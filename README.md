@@ -35,6 +35,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ![img7](/src/assets/img7.png)
 
 ## AF3
-![img4](/src/assets/img8.png)
-![img4](/src/assets/img9.png)
-![img4](/src/assets/img10.png)
+![img8](/src/assets/img8.png)
+![img9](/src/assets/img9.png)
+![img10](/src/assets/img10.png)
