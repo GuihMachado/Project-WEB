@@ -10,10 +10,10 @@
         <v-card-title>
           <div>
             <div class="text-h5">
-              Halycon Days
+              {{ cardComplete.title }}
             </div>
-            <div>Ellie Goulding</div>
-            <div>(2013)</div>
+            <div>{{ cardComplete.author }}</div>
+            <div>{{cardComplete.year}}</div>
           </div>
         </v-card-title>
       </v-col>
@@ -30,7 +30,7 @@
       Rate this album
       <v-spacer></v-spacer>
       <span class="grey--text text--lighten-2 text-caption mr-2">
-        ({{ rating }})
+        ({{ cardComplete.rating }})
       </span>
       <v-rating
         v-model="rating"
@@ -48,8 +48,9 @@
 <script>
   export default {
     name: 'CardMusic',
+    props: ['cardId', 'cardComplete'],
     data: () => ({
-      rating: 4.3,
+      
     }),
   }
 </script>
